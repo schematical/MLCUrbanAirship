@@ -3,9 +3,9 @@ abstract class MUADriver{
 	protected static $objClient = null;
 	public static function Init(){
 		if(is_null(self::$objClient)){
-            $intError = error_reporting(0);
+           // $intError = error_reporting(0);
 		 	self::$objClient = new Airship(__URBANAIRSHIP_KEY__, __URBANAIRSHIP_MASTER_SECRET__);
-            error_reporting($intError);
+            //error_reporting($intError);
 		}
 	}
 	public static function Push($arrMessage, $arrApids = null, $arrDeviceTokens = null, $arrTags = null, $strBadge = null){
