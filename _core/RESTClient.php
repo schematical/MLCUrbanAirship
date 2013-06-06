@@ -3,6 +3,7 @@
  Thanks George A. Papayiannis, most codes of this file are from
  http://www.sematopia.com/2006/10/how-to-making-a-php-rest-client-to-call-rest-resources/
  */
+throw new Exception("Screw off");
 require_once "HTTP/Request2.php";
 
 class RESTClient {
